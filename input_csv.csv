@@ -1,0 +1,19 @@
+net No.,con,type,fanout,fanin,fanin1,fanin2,delay
+1,gat,inpt,1,0,,,2
+2,gat,inpt,1,0,,,2
+3,gat,inpt,2,0,,,2
+8,fan,from,3,,,,2
+9,fan,from,3,,,,2
+4,gat,not,1,1,6,,3
+6,gat,inpt,1,0,,,2
+7,gat,inpt,1,0,,,2
+10,gat,nand,1,2,1,8,5
+11,gat,and,2,2,9,4,4
+14,fan,from,11,,,,2
+15,fan,from,11,,,,2
+16,gat,nand,2,2,2,14,5
+20,fan,from,16,,,,2
+21,fan,from,16,,,,2
+19,gat,or,1,2,15,7,4
+22,gat,nand,0,2,10,20,5
+23,gat,nand,0,2,21,19,5
