@@ -1,27 +1,12 @@
 ````markdown
-# Maximum Clock Frequency Estimator 🕒🔍
-
-[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green)](#)
+# Maximum Clock Frequency Estimator 
 
 **Estimate the highest safe clock frequency** of any synchronous digital circuit using _Static Timing Analysis_ (STA).
 
 ---
 
-## 🔖 Table of Contents
-1. [📋 Overview](#-overview)
-2. [📐 Key Concepts](#-key-concepts)
-3. [🧮 Core Equations](#-core-equations)
-4. [⚙️ Implementation Details](#️-implementation-details)
-5. [🚀 Quickstart & Usage](#-quickstart--usage)
-6. [📊 Example](#-example)
-7. [✅ Validation](#-validation)
-8. [🔮 Future Enhancements](#-future-enhancements)
-9. [📄 License](#-license)
 
----
-
-## 📋 Overview
+##  Overview
 This tool computes the **minimum clock period** (and thus the **maximum clock frequency**) for a synchronous circuit by:
 
 - Parsing a circuit netlist and associated timing parameters
@@ -33,7 +18,7 @@ Results help ensure timing closure without exhaustive simulation.
 
 ---
 
-## 📐 Key Concepts
+##  Key Concepts
 
 - **Data Path**: From flip‑flop `Q` output, through combinational logic, to flip‑flop `D` input.
 - **Clock Path**: From clock source to FF clock pins, accounting for buffer/skew delays.
@@ -42,7 +27,7 @@ Results help ensure timing closure without exhaustive simulation.
 
 ---
 
-## 🧮 Core Equations
+##  Core Equations
 ```text
 # Setup-Time Constraint:
 T_cq + T_comb,max + T_setup ≤ T_clk + T_skew,min
@@ -59,7 +44,7 @@ T_cq + T_comb,min ≥ T_hold + T_skew,max
 
 ---
 
-## ⚙️ Implementation Details
+##  Implementation Details
 
 1. **Input Parsing**: Read:
 
