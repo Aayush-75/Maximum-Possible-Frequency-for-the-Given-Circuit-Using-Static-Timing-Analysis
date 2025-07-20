@@ -27,3 +27,12 @@ T_cq + T_comb,min ≥ T_hold + T_skew,max
 
 ⇒ Equivalently:
 T_cq + T_comb,min − T_skew,max ≥ T_hold
+
+
+
+6.  Future Enhancements
+Support for clock skew/jitter variations
+
+Incorporate multi‑clock‑domain analysis
+
+Extend to statistical STA (SSTA) with process‑variation modeling
