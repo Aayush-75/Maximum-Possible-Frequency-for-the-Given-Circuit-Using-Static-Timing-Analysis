@@ -94,22 +94,8 @@ T_cq + T_comb,min ≥ T_hold + T_skew,max
 
 ---
 
-## 🚀 Quickstart & Usage
 
-1. **Clone the repo**
-
-   ```bash
-   git clone https://github.com/Aayush-75/Maximum-Possible-Frequency-for-the-Given-Circuit-Using-Static-Timing-Analysis.git
-   cd Maximum-Possible-Frequency-for-the-Given-Circuit-Using-Static-Timing-Analysis
-   ```
-
-2. **Install dependencies**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Run analysis**
+1. **Run analysis**
 
    ```bash
    python sta_max_freq.py \
@@ -122,7 +108,7 @@ T_cq + T_comb,min ≥ T_hold + T_skew,max
      --clk-path    clk_delays.json
    ```
 
-4. **Interpret output**
+2. **Interpret output**
 
    * `Critical Path`: Node sequence and delay sum
    * `T_clk_min` & `f_max` reported in ns & MHz
@@ -130,7 +116,7 @@ T_cq + T_comb,min ≥ T_hold + T_skew,max
 
 ---
 
-## 📊 Example
+##  Example
 
 ```text
 Critical Path: FF1 → L1 → L2 → FF2
@@ -143,25 +129,21 @@ f_max = 1 / 25.008 ns ≈ 39.99 MHz
 
 ---
 
-## ✅ Validation
+##  Validation
 
 * Matched textbook scenarios (e.g., 26 ns data, 9 ns skew, 4 ns setup → `T_clk_min`=21 ns)
 * Verified hold constraints across multiple nets
 
 ---
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 * Clock jitter & skew variation modeling
 * Multi‑clock domain analysis
 * Statistical STA (SSTA) with process variation
 * GUI for visualizing path delays
 
----
 
-## 📄 License
-
-Distributed under the **MIT License**. See `LICENSE` for details.
 
 ```
 ```
