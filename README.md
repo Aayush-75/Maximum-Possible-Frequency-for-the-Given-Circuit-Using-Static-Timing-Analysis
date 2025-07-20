@@ -10,17 +10,17 @@ Data-paths: From a flip‑flop’s clock‑to‑Q output, through combinational 
 
 Clock‑paths: From the clock source to each flip‑flop's clock pin, including buffering/skew effects.
 
-# 1. Setup-Time Constraint (per FF→FF path)
+1. Setup-Time Constraint (per FF→FF path)
 T_cq + T_comb,max + T_setup ≤ T_clk + T_skew,min
 
-# ⇒ Minimum clock period:
+⇒ Minimum clock period:
 T_clk,min = T_cq + T_comb,max + T_setup − T_skew,min
 
-# ⇒ Maximum frequency:
+⇒ Maximum frequency:
 f_max = 1 / T_clk,min
 
-# 2. Hold-Time Constraint
+2. Hold-Time Constraint
 T_cq + T_comb,min ≥ T_hold + T_skew,max
 
-# ⇒ Equivalently:
+⇒ Equivalently:
 T_cq + T_comb,min − T_skew,max ≥ T_hold
