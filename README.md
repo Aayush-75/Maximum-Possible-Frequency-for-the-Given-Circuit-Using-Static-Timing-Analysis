@@ -128,7 +128,3 @@ f_max = 1 / 25.008 ns ≈ 39.99 MHz
 * Statistical STA (SSTA) with process variation
 * GUI for visualizing path delays
 
-
-
-```
-```
