@@ -3,12 +3,14 @@ This paper presents an in-depth investigation of static timing analysis (STA) ap
 Objective:
 Determine the maximum clock frequency (or minimum clock period) for a synchronous circuit using Static Timing Analysis (STA).
 
+
 1. 📐 Key Concepts
 Timing paths:
 
 Data-paths: From a flip‑flop’s clock‑to‑Q output, through combinational logic, to the next flip‑flop’s D input.
 
 Clock‑paths: From the clock source to each flip‑flop's clock pin, including buffering/skew effects.
+
 
 1. Setup-Time Constraint (per FF→FF path)
 T_cq + T_comb,max + T_setup ≤ T_clk + T_skew,min
@@ -18,6 +20,7 @@ T_clk,min = T_cq + T_comb,max + T_setup − T_skew,min
 
 ⇒ Maximum frequency:
 f_max = 1 / T_clk,min
+
 
 2. Hold-Time Constraint
 T_cq + T_comb,min ≥ T_hold + T_skew,max
